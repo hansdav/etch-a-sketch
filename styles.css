@@ -1,0 +1,38 @@
+
+body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 95vh;
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#container {
+    height: 480px;
+    width: 480px;
+
+    border-radius: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+    display: flex;
+    flex: 0 0 auto;
+  }
+
+#grid {
+    display: flex;
+}
+
+
+.row {
+    border: 0;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.cell {
+    width: 30px;
+    flex: 1 1 auto;
+}
