@@ -1,0 +1,43 @@
+
+body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    margin-top: 50px;
+
+}
+
+#container {
+    height: 480px;
+    width: 480px;
+
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+  }
+
+.row {
+    border: 0;
+
+    height: 30px;
+
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+}
+
+.cell {
+    width: 30px;
+    border: 0.5px solid black;
+    flex: 1 1 auto;
+    background-color: aliceblue;
+}
+
+.lit {
+    background-color: goldenrod;
+}
