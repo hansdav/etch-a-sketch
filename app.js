@@ -1,29 +1,29 @@
+const frame = document.getElementById("container");
 
-//button that calls createGrind functions//
-// queryselector("button")
-// addEventListener click 
-// deletes the divs created before
-// runs function createGrid
+frame.addEventListener('mouseover', event => { // listen on the frame for any hover
+    let target = event.target; //find the target of the hover
+    draw(target); // call the draw function on that element
+});
 
-
+function draw(input){
+    input.classList.add("lit");
+}
 //function that creates grids in html//
 function createGrid() {
 let input = prompt("Choose a number of spaces for each side!", "");
 let spaces = parseInt(input);
 
 for (let i = spaces; i > 0; i--) {
-    const grid = document.querySelector('#grid');
+    const container = document.querySelector("#container");
 
-    const row = document.createElement('div');
-    row.classList.add('row');
-    row.textContent = 'div!';
+    const row = document.createElement("div");
+    row.classList.add("row");
     
-    grid.appendChild(row);
+    container.appendChild(row);
 
-for (let i = spaces - 1; i > 0; i--) {
+for (let i = spaces; i > 0; i--) {
     const cell = document.createElement("div");
     cell.classList.add("cell");
-    cell.textContent = "cell";
 
     row.appendChild(cell);
         }
